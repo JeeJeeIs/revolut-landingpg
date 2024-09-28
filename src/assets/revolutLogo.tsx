@@ -2,11 +2,12 @@
 type Props = {
     width: string
     height: string
+    color: string
 }
 
-const RevolutLogo = ({ width, height }: Props) => (
+const RevolutLogo = ({ width, height, color}: Props) => (
   <svg
-    fill="white"
+    fill={color}
     viewBox="0 0 145 32"
     xmlns="http://www.w3.org/2000/svg"
     className="sc-81786132-0 bmMKuq"
