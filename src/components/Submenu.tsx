@@ -35,8 +35,8 @@ export function Submenu({ SubmenuActive, changeSubmenuActive }: SubmenuProps) {
         "Revolut <18 Parents & Guardians",
     ]
     return (
-        <div onMouseEnter={() => changeSubmenuActive(true)} onMouseLeave={() => changeSubmenuActive(false)} className={`${SubmenuActive ? "block" : "hidden" } bg-white w-[100%] h-[60%] px-[250px] py-[35px]`}>
-            <h1 className='font-semibold text-4xl'>Discover Revolut &#8594;</h1>
+        <div onMouseEnter={() => changeSubmenuActive(true)} onMouseLeave={() => changeSubmenuActive(false)} className={`${SubmenuActive ? "block" : "hidden" } bg-white w-[100%] h-[60%] px-[250px] py-[50px] mt-[-20px]`}>
+            <h1 className='font-semibold text-4xl font-Aeonik'>Discover Revolut &#8594;</h1>
             <div className='grid grid-cols-6 mt-10'>
                 <SubmenuItems title="Essentials" childItems={items}/>
                 <SubmenuItems title="Essentials" childItems={items}/>

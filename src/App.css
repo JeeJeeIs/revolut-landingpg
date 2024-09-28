@@ -8,3 +8,20 @@
   box-sizing: border-box;
 }
 
+@layer base {
+  @font-face {
+    font-family: 'Aeonik-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://assets.revolut.com/assets/fonts/AeonikPro-Regular.woff2") format('woff2');
+  }
+  @font-face {
+    font-family: 'Aeonik-Capitalized-Black';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://assets.revolut.com/assets/fonts/AeonikPro-Black-Capitalised.woff2") format('woff2');
+  }
+}
+
