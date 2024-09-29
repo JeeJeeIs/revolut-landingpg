@@ -25,3 +25,10 @@
   }
 }
 
+.test {
+  left: 50%;
+  transform: translate(-50%);
+  min-height: calc(370px * 2);
+  min-width: calc(665px * 2);
+}
+

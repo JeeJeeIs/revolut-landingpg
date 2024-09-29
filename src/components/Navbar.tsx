@@ -24,16 +24,16 @@ export function Navbar({ changeSubmenuActive, SubmenuActive }: navbarProps) {
         <div className={` ${SubmenuActive ? "bg-white" : "bg-transparent"} flex justify-around flex-row w-[100%] items-center pt-2 h-[10%] `}>
             <div className="flex flex-row items-center">
                 <a className="w-[150px]" onMouseEnter={() => changeSubmenuActive(false)} href=""><RevolutLogo height={"40"} width={"125"} color={SubmenuActive ? "black" : "white"} /></a>
-                <div onMouseEnter={() => changeSubmenuActive(true)} onMouseLeave={() => changeSubmenuActive(false)} className='flex gap-1'>
+                <div onMouseEnter={() => changeSubmenuActive(true)} onMouseLeave={() => changeSubmenuActive(false)} className='hidden gap-1 lg:flex'>
                     <NavbarItems changeSubmenuActive={changeSubmenuActive} SubmenuActive={SubmenuActive} title={"Personal"} href={""} />
                     <NavbarItems changeSubmenuActive={changeSubmenuActive} SubmenuActive={SubmenuActive} title={"Business"} href={""} />
                     <NavbarItems changeSubmenuActive={changeSubmenuActive} SubmenuActive={SubmenuActive} title={"Revolut <18"} href={""} />
                     <NavbarItems changeSubmenuActive={changeSubmenuActive} SubmenuActive={SubmenuActive} title={"Company"} href={""}/> 
                 </div> 
             </div>
-            <div onMouseEnter={() => changeSubmenuActive(false)} className='flex gap-6'>
-                <Button name={"Log in"} styleSecond={false} SubmenuActive={SubmenuActive} />
-                <Button name={"Sign Up"} styleSecond={true} SubmenuActive={SubmenuActive} />
+            <div onMouseEnter={() => changeSubmenuActive(false)} className='hidden gap-6 md:flex'>
+                <Button name={"Log in"} styleSecond={false} SubmenuActive={SubmenuActive} className={""} />
+                <Button name={"Sign Up"} styleSecond={true} SubmenuActive={SubmenuActive} className={""}/>
             </div>
         </div>
     )
